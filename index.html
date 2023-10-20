@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HCI Assignment 4</title>
+    <style>
+        .mini{
+            width: 100%;
+            height: 300px;
+            margin: 10px 0;
+        }
+
+        .flex-container{
+            max-width: 100%;
+            height: auto;
+
+            /* border: 1px solid lime; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .flex-col{
+            max-width: 45%;
+            height: auto;
+
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .mini h2{
+            text-align: center;
+        }
+
+        
+        /****************************************************************/
+        @media (max-width: 767px){
+            body{font-size: 6px;}
+            .container{padding: 0 10px; border: 1px solid #90ddf0;;}
+            img{border: 1px solid white; margin: auto 0;}
+            .mini{height: 150px;}
+            ul,ol{margin: 10px; padding: 0;}
+            section{margin-left: 10px;}
+            input{width: 7px;}
+            .flex-col{max-width: 40%;}
+            h2{font-size: 7px;}
+            /* .flex-container{flex-direction: column;} */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Hello World!</h1>
+            <p>Alexander Legolas Myfia - 2702342174</p>
+        </div>
+        <nav>
+            <a href="">Instagram</a> |
+            <a href="">Youtube</a>
+        </nav>
+    </header>
+    <main>
+        <div class="big-main">
+            <aside class="prof-pic">
+                <img src="profpic.jpg" alt="Hey, thats me!">
+                <img src="profpic2.jpg" alt="Hey, thats me!">
+            </aside>
+            <section>
+                <div class="container">
+                    <h1>Hello World! My name is Alexander Legolas Myfia!</h1>
+                    <p style="text-align: justify;">
+                        Hello there, my name is Alexander Legolas Myfia, but you may call me 'Legs'.
+                        I am currently pursuing Computer Science in Binus INTERNATIONAL and am looking forward to be the best man in the team and the most cooperative one too.
+                        I am familiar with WebDev, Python, and a bit of Java and GameDev, but regardless I am sure that I will know a lot more about computing and programming throughout my college life.
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <div class="container mini">
+                            <h2><u>My Hobbies</u></h2>
+                            <ul>
+                                <li>Boxing</li>
+                                <li>Working out in the gym (Weight lifting)</li>
+                                <li>Gaming (FPS Games, Single-player Campaign)</li>
+                                <li>Coding / Programming</li>
+                                <li>Maths</li>
+                            </ul>
+                        </div>
+                        <div class="container mini">
+                            <h2><u>My Gender</u></h2>
+                            <input type="radio" name="gender"><label for="gender">Male</label><br>
+                            <input type="radio" name="gender"><label for="gender">Female</label>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="container mini">
+                            <h2><u>My Education History</u></h2>
+                            <ol>
+                                <li>BPK Penabur: <a href="https://bpkpenabur.or.id">Link to Homepage</a></li>
+                                <li>Binus INTERNATIONAL: <a href="https://binus.ac.id">Link to Homepage</a></li>
+                            </ol>
+                        </div>
+                        <div class="container mini">
+                            <h2><u>My Programming Skills</u></h2>
+                            <input type="checkbox" name="skill"><label for="skill">Software Development</label><br>
+                            <input type="checkbox" name="skill"><label for="skill">Computational Thinking</label><br>
+                            <input type="checkbox" name="skill"><label for="skill">Algorithmic Programming</label><br>
+                            <input type="checkbox" name="skill"><label for="skill">Logical Understanding</label><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2>Check me out in</h2>
+            <a href="https://www.instagram.com/ayy_lex2104/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCxLHcwtOrsbw5KTodeF7gLA"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://twitter.com/DSiverstain"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
